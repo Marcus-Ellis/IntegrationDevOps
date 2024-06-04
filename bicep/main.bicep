@@ -37,7 +37,7 @@ var logicAppStdName = format('{0}-{1}-std-la', projectName, environmentName)
 module logicAppStdComputerVisionConnector 'la-std-conn-cv.bicep' = {
   name: 'logicAppModuleStandardComputerVisionConnector'
   params: {
-    cognitiveServicesAccountResourceGroup: 'gb-int-other-services-rg'
+    cognitiveServicesAccountResourceGroup: 'IntegrateWithRG'
     cvConnectionName: 'cognitiveservicescomputervision'
     cvAccountName: 'gb-int-other-services-cv'
   }
@@ -47,7 +47,7 @@ module logicAppStdComputerVisionConnector 'la-std-conn-cv.bicep' = {
 module logicAppStdBlobConnector 'la-std-conn-blob.bicep' = {
   name: 'logicAppModuleStandardComputerBlobConnector'
   params: {
-    blobServiceResourceGroup: 'gb-int-other-services-rg'
+    blobServiceResourceGroup: 'IntegrateWithRG'
     blobConnectionName: 'AzureBlob_V2'
     blobAccountName: 'gbintotherservicesst'
     location: projectRG.location
