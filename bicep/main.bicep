@@ -39,7 +39,7 @@ module logicAppStdComputerVisionConnector 'la-std-conn-cv.bicep' = {
   params: {
     cognitiveServicesAccountResourceGroup: 'IntegrateWithRG'
     cvConnectionName: 'cognitiveservicescomputervision'
-    cvAccountName: 'gb-int-other-services-cv'
+    cvAccountName: 'ComputerVisionAvara'
   }
   scope: resourceGroup(projectRG.name)
 }
@@ -49,7 +49,7 @@ module logicAppStdBlobConnector 'la-std-conn-blob.bicep' = {
   params: {
     blobServiceResourceGroup: 'IntegrateWithRG'
     blobConnectionName: 'AzureBlob_V2'
-    blobAccountName: 'gbintotherservicesst'
+    blobAccountName: 'storageaccavara'
     location: projectRG.location
   }
   scope: resourceGroup(projectRG.name)
